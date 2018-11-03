@@ -48,12 +48,14 @@ class MovieReviews extends Component {
 
   render(){
     return(
-      <div>
-        <h2>Latest Movie Review</h2>
-        <button onClick={this.startTimer}>Start Fetching</button>
-        <button onClick={this.stopTimer}>Stop Fetching</button>
-        <h4>Times Updated: {this.state.times_updated}</h4>
-        <MovieReview reviews={this.state.reviews} />
+      <div className="row mb-3">
+        <div className="col">
+          <h2>Latest Movie Review</h2>
+          <button onClick={this.startTimer}>Start Fetching</button>
+          <button onClick={this.stopTimer}>Stop Fetching</button>
+          <h4>Times Updated: {this.state.times_updated}</h4>
+          <MovieReview reviews={this.state.reviews} />
+        </div>
       </div>
     )
   }
